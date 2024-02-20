@@ -12,14 +12,13 @@ class Student:
         self.nota_01 = nota_01
         self.nota_02 = nota_02
         
-    def create_student(nome: str, nota_01: float, nota_02: float):
-        
-        return Student(nome, nota_01, nota_02)
+def create_student(nome: str, nota_01: float, nota_02: float) :
+    return Student(nome, nota_01, nota_02)
 
-student =  Student.create_student(nome, float(nota_01), float(nota_02))
+student =  create_student(nome, float(nota_01), float(nota_02))
 
-def avarege() -> print :
+def avarege() -> None :
     sum_avarege = (student.nota_01 + student.nota_02) / 2
-    print(f"Ola {student.nome} sua media é de {sum_avarege.real}")
+    return print(f"Ola {student.nome} sua media é de {sum_avarege.real}")
        
 avarege()

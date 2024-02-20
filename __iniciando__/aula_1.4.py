@@ -15,8 +15,13 @@
 def check_age(age: int) -> int:
     
     # se idade for igual a 29 siginifica que é  -> true
-    if not type(age) == int: return print("Por favor informe uma idade valida.")
-    if  age == 29: return print("Essa é minha idade.")
+    if not type(age) == int:
+        print("Por favor informe uma idade valida.")
+        return age 
+    if  age == 29: 
+        print("Essa é minha idade.")
+        return age
     print("Ops idade errada.")
+    return age
     
 check_age(29)

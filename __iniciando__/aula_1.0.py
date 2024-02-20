@@ -13,6 +13,7 @@ print("Hallo Word !!!")
 print("Hallo Word 02 !!!")
 
 def teste(str: str) -> str:
-    return print(f"Ola eu {str}")
+    print(f"Ola eu {str}")
+    return str
 
 teste("Davi")
